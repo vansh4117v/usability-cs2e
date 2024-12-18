@@ -41,12 +41,21 @@
     }
     .primary-button{
         width: 100%;
+        text-align: center;
     }
     .big-feature-container{
         flex-direction: column;
     }
     #spl-cont{
         flex-direction: column-reverse;
+    }
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        gap:40px;
+    }
+    .link-column{
+        align-items: center;
     }
 
 }
