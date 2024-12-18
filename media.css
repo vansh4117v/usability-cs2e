@@ -1,61 +1,101 @@
-.container{
+.container {
     overflow: hidden;
 }
-.nav-toggle{
+
+.nav-toggle {
     display: none;
 }
 
-.example-card{
+.example-card {
     height: 300px;
 }
 
 @media screen and (max-width:991px) {
-    .nav-toggle{
+    .nav-toggle {
         display: block;
         margin-right: 20px;
     }
-    .nav-links{
+
+    .nav-links {
         display: none;
     }
-    
-    .example-area{
+
+    .example-area {
         flex-wrap: wrap;
         gap: 20px;
     }
-    .example-card{
+
+    .example-card {
         width: calc(50% - 10px);
         height: 180px;
     }
-    .logos{
+
+    .logos {
         justify-content: space-evenly;
     }
 }
 
-@media screen and (max-width:767px){
-    .header-section{
+@media screen and (max-width:767px) {
+    .header-section {
         flex-direction: column-reverse;
-    }
-    .header-left{
-        width: 100%;
-        text-align: center;
-    }
-    .primary-button{
-        width: 100%;
-        text-align: center;
-    }
-    .big-feature-container{
-        flex-direction: column;
-    }
-    #spl-cont{
-        flex-direction: column-reverse;
-    }
-    .footer-container{
-        flex-direction: column;
-        align-items: center;
-        gap:40px;
-    }
-    .link-column{
-        align-items: center;
     }
 
+    .header-left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .primary-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .big-feature-container {
+        flex-direction: column;
+    }
+
+    #spl-cont {
+        flex-direction: column-reverse;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .link-column {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:479px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    :root {
+        --padding-inline-section: 10px;
+    }
+
+    .feature-card{
+        margin-block: 20px;
+        min-width: 100%;
+    }
+
+    .example-card{
+        width: 100%;
+    }
 }
